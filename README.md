@@ -1,2 +1,24 @@
-# cs520-mltoolkit-jarredb_jefft
-Repository that contains files for the final project of CS520. This project aims to apply software engineering principles to an ML development toolkit.
+# Team: Sentimental Smacking
+---
+## Application:
+
+## Semester: Spring 2022
+---
+
+## Overview:
+
+
+## Team Members:
+- Jarred Bettencourt
+  - Github: `jbettencourt10`
+- Jeffrey Tran
+  - Github: `jeffreyttran`
+
+
+
+## Delegation of Duties:
+
+## Timeline:
+
+
+## Video Link
