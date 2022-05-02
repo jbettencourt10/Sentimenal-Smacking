@@ -1,15 +1,25 @@
+
+
 import pandas as pd
 import tensorflow as tf
+from tensorflow.keras.layers.experimental.preprocessing import TextVectorization
 import nltk
 
 
+def preprocess_tweet(tweet: str):
+    tweet = tweet.lower()
+    tweet = nltk.word_tokenize(tweet)
+    tweet = [word for word in tweet if word.isalpha()]
+    tweet = ' '.join(tweet)
+    return tweet
 
 
 def read_twitter_dataset(file: str):
     data = pd.read_csv(file, encoding='cp1252')
     tweets = data.iloc[:, 0].values.tolist()
     labels = data.iloc[:, 1].values.tolist()
-    labels =
+    tweets = [preprocess_tweet(tweet) for tweet in tweets]
+    labels = [1 if label == 'WillSmith' else 0 for label in labels]
     return tweets, labels
 
 
@@ -17,17 +27,35 @@ def read_twitter_dataset(file: str):
 arrays = read_twitter_dataset("../data/sentimental_smacking_sample_twitter_dataset.csv")
 
 
-
 BATCH_SIZE = 32
 
 
-VOCAB_SIZE = 1000
-encoder = tf.keras.layers.TextVectorization(max_tokens=VOCAB_SIZE)
-# encoder.adapt(arrays.map(lambda text, label: text))
+VOCAB_SIZE = 50
+encoder = TextVectorization(max_tokens=VOCAB_SIZE)
+encoder.adapt(arrays[0])
 
 
 
+model = tf.keras.Sequential([
+    encoder,
+    tf.keras.layers.Embedding(
+        input_dim=len(encoder.get_vocabulary()),
+        output_dim=64,
+        mask_zero=True),
+    tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(64)),
+    tf.keras.layers.Dense(64, activation='relu'),
+    tf.keras.layers.Dense(1)
+])
 
+
+model.compile(loss=tf.keras.losses.BinaryCrossentropy(from_logits=True),
+              optimizer=tf.keras.optimizers.Adam(1e-4),
+              metrics=['accuracy'])
+
+
+# model.fit(arrays[0], arrays[1], batch_size=BATCH_SIZE, epochs=10)
+
+history = model.fit(x=arrays[0], y=arrays[1],batch_size=BATCH_SIZE, epochs=150)
 
 
 
