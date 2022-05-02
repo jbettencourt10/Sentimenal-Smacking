@@ -10,9 +10,9 @@ This project will compare the accuracy scores of two ML toolkits (Weights and Bi
 
 ## Data:
 For the terms of this project, the data is organized in a csv, where each column denotes the following:
-Column 1: Tweet Contents (text)
-Column 2: Tweet Sentiment (ChrisRock, WillSmith)
-Column 3: Tweet URL (url)
+- Column 1: Tweet Contents (text)
+- Column 2: Tweet Sentiment (ChrisRock, WillSmith)
+- Column 3: Tweet URL (url)
 
 
 ## Team Members:
