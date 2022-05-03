@@ -1,0 +1,10 @@
+
+<class 'list'>
+Traceback (most recent call last):
+  File "c:/Users/jbett/Code/UMass Amherst/First_Semester_Masters/CS520/Final Project/Sentimenal-Smacking/models/run.py", line 13, in <module>
+    main()
+  File "c:/Users/jbett/Code/UMass Amherst/First_Semester_Masters/CS520/Final Project/Sentimenal-Smacking/models/run.py", line 9, in main
+    rnn.train()
+  File "c:\Users\jbett\Code\UMass Amherst\First_Semester_Masters\CS520\Final Project\Sentimenal-Smacking\models\neural_network.py", line 36, in train
+    with tf.Session() as sess:
+AttributeError: module 'tensorflow' has no attribute 'Session'

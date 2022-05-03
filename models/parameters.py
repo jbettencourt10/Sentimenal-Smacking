@@ -1,5 +1,8 @@
 
+
+
 VOCAB_SIZE = 50
 
+EPOCHS = 150
 
 BATCH_SIZE = 32

@@ -1,0 +1,24 @@
+{
+    "os": "Windows-10-10.0.19044-SP0",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-05-03T01:34:01.064256",
+    "startedAt": "2022-05-03T01:33:54.456219",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 1060 6GB",
+    "gpu_count": 1,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "c:/Users/jbett/Code/UMass Amherst/First_Semester_Masters/CS520/Final Project/Sentimenal-Smacking/models/run.py",
+    "codePath": "models\\run.py",
+    "git": {
+        "remote": "https://github.com/jbettencourt10/Sentimenal-Smacking.git",
+        "commit": "dde8ea451e1765ddea81764ff8e8ef5f8de8ce59"
+    },
+    "email": "jbettencourt10@gmail.com",
+    "root": "C:/Users/jbett/Code/UMass Amherst/First_Semester_Masters/CS520/Final Project/Sentimenal-Smacking",
+    "host": "chime-pc",
+    "username": "chime",
+    "executable": "C:\\Coding\\anaconda\\envs\\chime_env\\python.exe"
+}

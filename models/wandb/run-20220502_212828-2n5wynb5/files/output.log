@@ -1,0 +1,22 @@
+
+<class 'list'>
+Traceback (most recent call last):
+  File "c:/Users/jbett/Code/UMass Amherst/First_Semester_Masters/CS520/Final Project/Sentimenal-Smacking/models/run.py", line 13, in <module>
+    main()
+  File "c:/Users/jbett/Code/UMass Amherst/First_Semester_Masters/CS520/Final Project/Sentimenal-Smacking/models/run.py", line 8, in main
+    rnn = neural_network.RNN(tweets, labels)
+  File "c:\Users\jbett\Code\UMass Amherst\First_Semester_Masters\CS520\Final Project\Sentimenal-Smacking\models\neural_network.py", line 26, in __init__
+    input_dim=len(self.encoder.get_vocabulary()),
+  File "C:\Coding\anaconda\envs\chime_env\lib\site-packages\tensorflow\python\keras\layers\preprocessing\text_vectorization.py", line 403, in get_vocabulary
+    return self._index_lookup_layer.get_vocabulary()
+  File "C:\Coding\anaconda\envs\chime_env\lib\site-packages\tensorflow\python\keras\layers\preprocessing\string_lookup.py", line 206, in get_vocabulary
+    if self._table_handler.vocab_size() == 0:
+  File "C:\Coding\anaconda\envs\chime_env\lib\site-packages\tensorflow\python\keras\layers\preprocessing\table_utils.py", line 53, in vocab_size
+    return self._eval(self.table.size())
+  File "C:\Coding\anaconda\envs\chime_env\lib\site-packages\tensorflow\python\ops\lookup_ops.py", line 1770, in size
+    with ops.colocate_with(self.resource_handle):
+  File "C:\Coding\anaconda\envs\chime_env\lib\site-packages\tensorflow\python\framework\ops.py", line 5315, in colocate_with
+    return _colocate_with_for_gradient(op, None, ignore_existing=ignore_existing)
+  File "C:\Coding\anaconda\envs\chime_env\lib\site-packages\tensorflow\python\framework\ops.py", line 5305, in _colocate_with_for_gradient
+    raise ValueError("Encountered an Eager-defined Tensor during graph "
+ValueError: Encountered an Eager-defined Tensor during graph construction, but a function was not being built.
