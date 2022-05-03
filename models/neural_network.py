@@ -6,10 +6,10 @@ import datetime
 
 import parameters
 
-# wandb.init(project="Sentimental Smacking", entity='jbettencourt')
+wandb.init(project="Sentimental Smacking", entity='jbettencourt')
 
-log_dir = "logs/fit/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
-tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir, histogram_freq=0)
+# log_dir = "logs/fit/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+# tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir, histogram_freq=0)
 
 wandb.config = {"epochs": parameters.EPOCHS, "batch_size": parameters.BATCH_SIZE}
 
@@ -36,4 +36,4 @@ class RNN:
 
     def train(self) -> None:
         self.model.compile(optimizer=tf.keras.optimizers.Adam(1e-4), loss=tf.keras.losses.BinaryCrossentropy(from_logits=True), metrics=['accuracy'])
-        self.model.fit(self.tweets, self.labels, batch_size=parameters.BATCH_SIZE, epochs=parameters.EPOCHS, callbacks=[tensorboard_callback])
+        self.model.fit(self.tweets, self.labels, batch_size=parameters.BATCH_SIZE, epochs=parameters.EPOCHS, callbacks=[WandbCallback()])
