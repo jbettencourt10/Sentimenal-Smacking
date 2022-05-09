@@ -35,4 +35,4 @@ For the terms of this project, the data is organized in a csv, where each column
 
 ## Video Link:
 https://www.youtube.com/watch?v=4IarHjCEzo8 : Midpoint Presentation
-https://youtu.be/jn9pFxsaK70                : Final Presentation
+https://www.youtube.com/watch?v=jn9pFxsaK70 : Final Presentation
