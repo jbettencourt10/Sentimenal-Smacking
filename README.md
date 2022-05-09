@@ -6,7 +6,7 @@
 ---
 
 ## Overview:
-This project will compare the accuracy scores of two ML toolkits (Weights and Biases, TensorFlow) to determine which performed better sentiment analysis on a dataset compiled of Twitter posts based on the incident that occurred between Will Smith and Chris Rock at the 2022 Oscars ceremony. We hope that in doing this, we will be able to answer the question of whether or not a GUI ML toolkit (like Weights and Biases) can handle NLP tasks, like sentimental analysis, up to par with industrial NLP libraries. Additionally, we hope to assess both toolkits from a software engineering perspective to comment on their usability, performance, and ease of use for programmers and non-programmers alike.
+This project will compare the accuracy scores of two ML toolkits (Weights and Biases, TensorFlow) to determine which performed better sentiment analysis on a dataset compiled of Twitter posts based on the incident that occurred between Will Smith and Chris Rock at the 2022 Oscars ceremony. We hope that in doing this, we will be able to answer the question of whether or not a GUI ML toolkit (like Weights and Biases) can handle NLP tasks, like sentimental analysis, up to par with industrial NLP libraries. Additionally, we hope to assess both toolkits from a software engineering perspective to comment on their ease of usability, performance, and functionality for programmers and non-programmers alike.
 
 ## Data:
 For the terms of this project, the data is organized in a csv, where each column denotes the following:
