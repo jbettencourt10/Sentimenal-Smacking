@@ -28,10 +28,11 @@ For the terms of this project, the data is organized in a csv, where each column
   - Will handle data analysis and any operations associated with the dataset
 
 ## Timeline:
-- April 8th: Twitter Bot is created and begins to gather Twitter posts related to event to compile datasets
+- April 8th: Begin to gather data from Twitter, hand label, and obtain intuition for relevant tweets
 - April 15th: ML models performs sentiment analysis using hand-labelled data
 - April 22nd: Accuracy scores generated from ML model outputs are compared between the two amongst other pieces of data
 - April 29th: Findings from the project and software investigation are documented in a tidied report
 
 ## Video Link:
-https://www.youtube.com/watch?v=4IarHjCEzo8
+https://www.youtube.com/watch?v=4IarHjCEzo8 : Midpoint Presentation
+                                            : Final Presentation
