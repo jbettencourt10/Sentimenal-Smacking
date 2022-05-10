@@ -34,5 +34,5 @@ For the terms of this project, the data is organized in a csv, where each column
 - April 29th: Findings from the project and software investigation are documented in a tidied report
 
 ## Video Link:
-https://www.youtube.com/watch?v=4IarHjCEzo8 : Midpoint Presentation
-https://www.youtube.com/watch?v=jn9pFxsaK70 : Final Presentation
+- https://www.youtube.com/watch?v=4IarHjCEzo8 : Midpoint Presentation
+- https://www.youtube.com/watch?v=jn9pFxsaK70 : Final Presentation
