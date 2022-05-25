@@ -80,7 +80,7 @@ pyasn1-modules==0.2.8
 pyasn1==0.4.8
 pycparser==2.21
 pygments==2.11.2
-pyjwt==1.7.1
+pyjwt==2.4.0
 pyopenssl==22.0.0
 pyparsing==3.0.4
 pyreadline==2.1
